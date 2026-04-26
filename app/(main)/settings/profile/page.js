@@ -369,42 +369,6 @@ export default function EditProfilePage() {
       </div>
       
     </div>
-    {/* Danger Zone */}
-<div style={{
-  background: 'rgba(236,72,153,0.04)',
-  border: '1px solid rgba(236,72,153,0.2)',
-  borderRadius: 16, padding: '1.5rem', marginTop: '1rem'
-}}>
-  <h3 style={{
-    fontFamily: 'var(--font-syne), Syne, sans-serif',
-    fontSize: '1rem', fontWeight: 600, color: '#ec4899', marginBottom: 8
-  }}>⚠️ Danger Zone</h3>
-  <p style={{ color: '#8896b0', fontSize: '0.88rem', marginBottom: '1rem', lineHeight: 1.6 }}>
-    Permanently delete your account and all your data including projects, blogs, questions and messages.
-    This action cannot be undone.
-  </p>
-  <button
-    onClick={async () => {
-      const confirmed = confirm('Are you absolutely sure? This will permanently delete your account and ALL your data. This cannot be undone.')
-      if (!confirmed) return
-      const doubleConfirm = confirm('Last chance — delete everything permanently?')
-      if (!doubleConfirm) return
-      const res = await fetch('/api/users/delete', { method: 'DELETE' })
-      const data = await res.json()
-      if (data.success) {
-        window.location.href = '/'
-      } else {
-        alert('Failed to delete account: ' + data.error)
-      }
-    }}
-    style={{
-      padding: '0.7rem 1.5rem', borderRadius: 10,
-      border: '1px solid rgba(236,72,153,0.4)',
-      background: 'rgba(236,72,153,0.08)',
-      color: '#ec4899', cursor: 'pointer', fontSize: '0.9rem',
-      fontFamily: 'inherit', fontWeight: 500
-    }}
-  >🗑️ Delete My Account</button>
-</div>
+    
   )
 }
