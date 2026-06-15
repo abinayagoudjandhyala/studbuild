@@ -1,36 +1,59 @@
-# StudBuild 🚀
-> Where students build, share & get noticed.
+# StudBuild
 
-[![Live](https://img.shields.io/badge/Live-studbuild--ten.vercel.app-4f8ef7?style=for-the-badge&logo=vercel)](https://studbuild-ten.vercel.app/)
-[![GitHub](https://img.shields.io/badge/GitHub-studbuild-181717?style=for-the-badge&logo=github)](https://github.com/abinayagoudjandhyala/studbuild)
+**Live:** [studbuild-ten.vercel.app](https://studbuild-ten.vercel.app)
 
-A full-stack community platform for student developers — showcase projects, write blogs, ask questions, and connect with peers.
+A community platform where student developers showcase projects, write blogs, ask/answer technical questions, and connect with other builders — all in one place.
 
 ---
 
-## Features
-- 🚀 **Project Showcase** — upload with cover image, GitHub & live links
-- 📝 **Dev Blogs** — write about your journey, mistakes & tips
-- ❓ **Q&A Forum** — ask questions, upvote answers, mark as solved
-- 👤 **Dev Profiles** — live GitHub stats, skills, social links
-- 💬 **Direct Messaging** — WhatsApp-style with read receipts
-- 🔔 **Notifications** — likes, follows, upvotes in real time
-- 🔍 **Explore & Search** — find projects by language or keyword
+## What it does
+
+StudBuild is built for students who want to:
+
+- **Showcase their work** — upload projects with cover images, descriptions, tags, GitHub links, and live demo links
+- **Build a developer profile** — auto-pulled GitHub stats, skills, social links, follower/following system
+- **Write and read blogs** — share your learning journey, tutorials, or project breakdowns
+- **Ask and answer questions** — a Stack Overflow-style Q&A space for coding, career, or college doubts
+- **Message other students** — real-time chat with read receipts and online status
+- **Get discovered** — explore page with search, trending projects, and category filters
+
+---
 
 ## Tech Stack
-`Next.js 16` `MongoDB` `Clerk` `Cloudinary` `Tailwind CSS v4` `Vercel`
 
-## Quick Start
-```bash
-git clone https://github.com/abinayagoudjandhyala/studbuild.git
-cd studbuild
-npm install
-# Add .env.local (see .env.example)
-npm run dev
-```
-
-## Built By
-**Abinaya Goud** · 3rd Year CSE · [Portfolio](https://abinayagoud.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/abinayagoud)
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| Styling | Tailwind CSS v4 |
+| Database | MongoDB Atlas + Mongoose |
+| Auth | Clerk (Google OAuth) |
+| Images | Cloudinary |
+| Hosting | Vercel |
+| Fonts | Syne (headings), DM Sans (body) |
 
 ---
-⭐ Star this repo if it helped or inspired you!
+
+## How someone benefits from using it
+
+1. **Sign up with Google** → onboard with name, bio, university, skills, and social links
+2. **Upload a project** → get likes, views, and feedback from other students
+3. **Write a blog** → document your journey and build an audience
+4. **Ask a question** → get help from peers; answer others' questions to build reputation
+5. **Follow other builders** → grow your network, see what they're working on
+6. **Message directly** → connect 1-on-1 with other students
+
+In short: it's a **portfolio + community + Q&A forum**, built specifically for students to build their developer identity and get noticed.
+
+---
+
+## Core Models
+
+`User` · `Project` · `Blog` · `Question` · `Message` · `Conversation` · `Notification`
+
+---
+
+## Author
+
+Built solo by **Abinaya Goud Jandhyala**, 3rd-year CSE student at Malla Reddy University.
+
+GitHub: [@abinayagoudjandhyala](https://github.com/abinayagoudjandhyala)
