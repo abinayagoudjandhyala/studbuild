@@ -78,10 +78,13 @@ export default function Navbar() {
         {/* Desktop Nav */}
         {!isMobile && (
           <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-            {[
-              { label: 'Home', path: '/home' },
-              { label: 'Explore', path: '/explore' },
-            ].map(link => (
+            
+{[
+  { label: 'Home', path: '/home' },
+  { label: 'Explore', path: '/explore' },
+  { label: 'Blogs', path: '/blogs' },
+  { label: 'Q&A', path: '/questions' },
+].map(link => (
               <span key={link.path} onClick={() => router.push(link.path)} style={{
                 color: pathname === link.path ? '#f0f4ff' : '#8896b0',
                 cursor: 'pointer', fontSize: '0.9rem', transition: 'color 0.2s',
@@ -198,13 +201,16 @@ export default function Navbar() {
           background: '#0d1120', borderBottom: '1px solid #1f2d45',
           padding: '1rem', display: 'flex', flexDirection: 'column', gap: 8
         }}>
-          {[
-            { label: '🏠 Home', path: '/home' },
-            { label: '🔍 Explore', path: '/explore' },
-            { label: '🚀 Add Project', path: '/projects/new' },
-            { label: '⚙️ Edit Profile', path: '/settings/profile' },
-            { label: '🔔 Notifications', path: '/notifications' },
-          ].map(({ label, path }) => (
+         
+{[
+  { label: '🏠 Home', path: '/home' },
+  { label: '🔍 Explore', path: '/explore' },
+  { label: '📝 Blogs', path: '/blogs' },
+  { label: '❓ Q&A', path: '/questions' },
+  { label: '🚀 Add Project', path: '/projects/new' },
+  { label: '⚙️ Edit Profile', path: '/settings/profile' },
+  { label: '🔔 Notifications', path: '/notifications' },
+].map(({ label, path }) => (
             <button key={path} onClick={() => { router.push(path); setMenuOpen(false) }} style={{
               padding: '0.75rem 1rem', borderRadius: 10,
               border: '1px solid #1f2d45', background: 'transparent',
